@@ -22,4 +22,6 @@ func main() {
 	extensions |= blackfriday.EXTENSION_SPACE_HEADERS
 	extensions |= blackfriday.EXTENSION_HEADER_IDS
 	println(blackfriday.Markdown([]byte(md), renderer, extensions))
+	println(blackfriday.MarkdownCommon([]byte(md)))
+	println(blackfriday.MarkdownBasic([]byte(md)))
 }
